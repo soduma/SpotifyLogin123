@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MainViewController: UIViewController {
 
@@ -18,8 +19,17 @@ class MainViewController: UIViewController {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let email = Auth.auth().currentUser?.email ?? "고객"
+        welcomeLabel.text = """
+        환영합니다.
+        \(email)님.
+        """
+    }
+    
     @IBAction func tapLogoutButton(_ sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
     }
-    
 }
