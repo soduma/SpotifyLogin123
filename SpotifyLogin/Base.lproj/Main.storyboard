@@ -213,7 +213,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSL-cZ-lrK">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSL-cZ-lrK">
                                 <rect key="frame" x="160" y="513" width="94" height="38"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -228,7 +228,6 @@
                         <viewLayoutGuide key="safeArea" id="mIn-nz-x0z"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YSL-cZ-lrK" firstAttribute="top" secondItem="6qB-9X-VjI" secondAttribute="bottom" constant="50" id="S2m-HH-0Pm"/>
                             <constraint firstItem="YSL-cZ-lrK" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="ghI-rC-c7E"/>
                             <constraint firstItem="6qB-9X-VjI" firstAttribute="centerY" secondItem="XWx-SE-gZb" secondAttribute="centerY" id="jyq-cW-XKX"/>
                             <constraint firstItem="6qB-9X-VjI" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="mM4-jd-4ds"/>

@@ -54,7 +54,6 @@
 				BED9C654FD472CAEB9E791FA /* Pods-SpotifyLogin.debug.xcconfig */,
 				D245B9A8277FA6BB896246A9 /* Pods-SpotifyLogin.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,8 +90,8 @@
 				A032CB5B2750A8E600218B27 /* SceneDelegate.swift */,
 				A032CB5D2750A8E600218B27 /* ViewController.swift */,
 				A032CB5F2750A8E600218B27 /* Main.storyboard */,
-				A032CB6F2750B8D100218B27 /* MainViewController.swift */,
 				A032CB6D2750AF8900218B27 /* EnterEmailViewController.swift */,
+				A032CB6F2750B8D100218B27 /* MainViewController.swift */,
 				A032CB622750A8E700218B27 /* Assets.xcassets */,
 				A032CB642750A8E700218B27 /* LaunchScreen.storyboard */,
 				A032CB672750A8E700218B27 /* Info.plist */,
