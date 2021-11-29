@@ -207,14 +207,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환영합니다" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qB-9X-VjI">
-                                <rect key="frame" x="153" y="433" width="108.5" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환영합니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qB-9X-VjI">
+                                <rect key="frame" x="30" y="433" width="354" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-3c-fik">
-                                <rect key="frame" x="141" y="488" width="132.5" height="38"/>
+                                <rect key="frame" x="20" y="488" width="374" height="38"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="비밀번호 변경">
@@ -225,7 +225,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSL-cZ-lrK">
-                                <rect key="frame" x="160" y="546" width="94" height="38"/>
+                                <rect key="frame" x="20" y="546" width="374" height="38"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃">
@@ -239,12 +239,18 @@
                         <viewLayoutGuide key="safeArea" id="mIn-nz-x0z"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="mIn-nz-x0z" firstAttribute="trailing" secondItem="OcR-3c-fik" secondAttribute="trailing" constant="20" id="DNK-Mv-5Lk"/>
+                            <constraint firstItem="6qB-9X-VjI" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="EIM-eJ-ucW"/>
+                            <constraint firstItem="6qB-9X-VjI" firstAttribute="leading" secondItem="mIn-nz-x0z" secondAttribute="leading" constant="30" id="ET4-mk-N2n"/>
+                            <constraint firstItem="mIn-nz-x0z" firstAttribute="trailing" secondItem="YSL-cZ-lrK" secondAttribute="trailing" constant="20" id="KDj-wE-ro8"/>
                             <constraint firstItem="OcR-3c-fik" firstAttribute="top" secondItem="6qB-9X-VjI" secondAttribute="bottom" constant="25" id="dw9-ZM-roY"/>
+                            <constraint firstItem="OcR-3c-fik" firstAttribute="leading" secondItem="mIn-nz-x0z" secondAttribute="leading" constant="20" id="gMS-U5-EtR"/>
                             <constraint firstItem="YSL-cZ-lrK" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="ghI-rC-c7E"/>
                             <constraint firstItem="OcR-3c-fik" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="giW-32-8uy"/>
-                            <constraint firstItem="6qB-9X-VjI" firstAttribute="centerY" secondItem="XWx-SE-gZb" secondAttribute="centerY" id="jyq-cW-XKX"/>
-                            <constraint firstItem="6qB-9X-VjI" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="mM4-jd-4ds"/>
+                            <constraint firstItem="mIn-nz-x0z" firstAttribute="trailing" secondItem="6qB-9X-VjI" secondAttribute="trailing" constant="30" id="nut-Ur-b9B"/>
+                            <constraint firstItem="YSL-cZ-lrK" firstAttribute="leading" secondItem="mIn-nz-x0z" secondAttribute="leading" constant="20" id="sHe-s3-pBX"/>
                             <constraint firstItem="YSL-cZ-lrK" firstAttribute="top" secondItem="OcR-3c-fik" secondAttribute="bottom" constant="20" id="udU-rQ-hzC"/>
+                            <constraint firstItem="6qB-9X-VjI" firstAttribute="centerY" secondItem="XWx-SE-gZb" secondAttribute="centerY" id="uh8-18-s4J"/>
                         </constraints>
                     </view>
                     <connections>
