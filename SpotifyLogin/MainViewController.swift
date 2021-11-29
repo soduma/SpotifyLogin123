@@ -38,6 +38,18 @@ class MainViewController: UIViewController {
         Auth.auth().sendPasswordReset(withEmail: email, completion: nil)
     }
     
+    @IBAction func tapProfileChangeButton(_ sender: UIButton) {
+        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+        changeRequest?.displayName = "왈왈이"
+        changeRequest?.commitChanges(completion: { _ in
+            let displayName = Auth.auth().currentUser?.displayName ?? Auth.auth().currentUser?.email ?? "고객"
+            self.welcomeLabel.text = """
+        환영합니다
+        \(displayName)님.
+        """
+        })
+    }
+    
     @IBAction func tapLogoutButton(_ sender: UIButton) {
         let firebaseAuth = Auth.auth()
         

@@ -214,7 +214,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-3c-fik">
-                                <rect key="frame" x="20" y="488" width="374" height="38"/>
+                                <rect key="frame" x="141" y="488" width="132.5" height="38"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="비밀번호 변경">
@@ -225,7 +225,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSL-cZ-lrK">
-                                <rect key="frame" x="20" y="546" width="374" height="38"/>
+                                <rect key="frame" x="160.5" y="604" width="93.5" height="38"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃">
@@ -235,21 +235,30 @@
                                     <action selector="tapLogoutButton:" destination="Muf-XI-EBh" eventType="touchUpInside" id="hhY-Rw-mCD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebt-6I-Y2T">
+                                <rect key="frame" x="149" y="546" width="116" height="38"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="프로필 변경">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapProfileChangeButton:" destination="Muf-XI-EBh" eventType="touchUpInside" id="TQK-wT-k2c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mIn-nz-x0z"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mIn-nz-x0z" firstAttribute="trailing" secondItem="OcR-3c-fik" secondAttribute="trailing" constant="20" id="DNK-Mv-5Lk"/>
+                            <constraint firstItem="ebt-6I-Y2T" firstAttribute="top" secondItem="OcR-3c-fik" secondAttribute="bottom" constant="20" id="CtT-WW-Tlt"/>
                             <constraint firstItem="6qB-9X-VjI" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="EIM-eJ-ucW"/>
                             <constraint firstItem="6qB-9X-VjI" firstAttribute="leading" secondItem="mIn-nz-x0z" secondAttribute="leading" constant="30" id="ET4-mk-N2n"/>
-                            <constraint firstItem="mIn-nz-x0z" firstAttribute="trailing" secondItem="YSL-cZ-lrK" secondAttribute="trailing" constant="20" id="KDj-wE-ro8"/>
                             <constraint firstItem="OcR-3c-fik" firstAttribute="top" secondItem="6qB-9X-VjI" secondAttribute="bottom" constant="25" id="dw9-ZM-roY"/>
-                            <constraint firstItem="OcR-3c-fik" firstAttribute="leading" secondItem="mIn-nz-x0z" secondAttribute="leading" constant="20" id="gMS-U5-EtR"/>
                             <constraint firstItem="YSL-cZ-lrK" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="ghI-rC-c7E"/>
                             <constraint firstItem="OcR-3c-fik" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="giW-32-8uy"/>
+                            <constraint firstItem="YSL-cZ-lrK" firstAttribute="top" secondItem="ebt-6I-Y2T" secondAttribute="bottom" constant="20" id="hCg-B0-8F8"/>
                             <constraint firstItem="mIn-nz-x0z" firstAttribute="trailing" secondItem="6qB-9X-VjI" secondAttribute="trailing" constant="30" id="nut-Ur-b9B"/>
-                            <constraint firstItem="YSL-cZ-lrK" firstAttribute="leading" secondItem="mIn-nz-x0z" secondAttribute="leading" constant="20" id="sHe-s3-pBX"/>
-                            <constraint firstItem="YSL-cZ-lrK" firstAttribute="top" secondItem="OcR-3c-fik" secondAttribute="bottom" constant="20" id="udU-rQ-hzC"/>
+                            <constraint firstItem="ebt-6I-Y2T" firstAttribute="centerX" secondItem="XWx-SE-gZb" secondAttribute="centerX" id="tcl-MF-MD1"/>
                             <constraint firstItem="6qB-9X-VjI" firstAttribute="centerY" secondItem="XWx-SE-gZb" secondAttribute="centerY" id="uh8-18-s4J"/>
                         </constraints>
                     </view>
